@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <style>  </style>
+    <link rel="stylesheet" href="cs.css">
+</head>
+<body>
+    <header class="site-header">
+        <img src="cloud.png" alt="Site Icon" width="50" height="50"> 
+        <h1>WEATHERVUE</h1>
+    </header>
+    <div class="search-bar">
+        <input type="text" placeholder="Enter city name..." id="city">
+        <button id="submit" type="submit">Search</button>
+    </div>
+    <div class="glass">
+        <div class="left-panel">
+            <div class="today-forecast">
+                <h2>Weather Forecast</h2>
+                <p class="temperature"><span id="icon" class="t"></span> <span id="temp">20</span>°C</p>
+                <p><span id="description"></span></p>
+                <p>The low temperature will reach <span id="min_t">32.1</span>°C on this <span id="wmain"></span> day.</p>
+            </div>
+            <div class="location">
+                <h2><span id="cityname"></span></h2>
+                <p><span id="date"><span id="t1">Tuesday</span>, <span id="m1">June</span> <span id="one">day</span></span></p>
+            </div>
+            <div class="today-stats">
+                <h2>Weather Details</h2>
+                <div class="stats-container">
+                    <div class="stats-item">
+                        <p><i class="icon-small"><img width="20px" height="20px" src="wind.png" alt=""></i> Wind Speed</p>
+                        <p><span id="wind"></span>km/h</p>
+                    </div>
+                    <div class="stats-item">
+                        <p><i><img width="20px" height="20px" src="gauge.png" alt=""></i> Pressure</p>
+                        <p><span id="pressure"></span>hPa</p>
+                    </div>
+                    <div class="stats-item">
+                        <p><i><img width="20px" height="20px" src="humidity.png" alt=""></i> Humidity</p>
+                        <p><span id="Humidity"></span></p>
+                    </div>
+                    <div class="stats-item">
+                        <p><i><img width="20px" height="20px" src="hot-temperature.png" alt=""></i> Max Temperature</p>
+                        <p><span id="max_t"></span>°C</p>
+                    </div>
+                    <div class="stats-item">
+                        <p><i class="icon-small"><img width="20px" height="20px" src="low-temperature.png" alt=""></i> Min Temperature</p>
+                        <p><span id="min_tt">6</span>°C</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="weekly-forecast">
+                <h2>The Next Day Forecast</h2>
+                <div class="forecast-item">
+                    <h3><span id="t2">Tuesday</span>, June <span id="ss">day</span></h3>
+                    <p class="temp"><span id="dayi">34</span>°C</p>
+                    <p><span id="day1image" class="icon-small"></span> <span id="day1d"> Sunny</span></p>
+                </div>
+                <div class="forecast-item">
+                    <h3><span id="t3">Tuesday</span>, June <span id="sss">day</span></h3>
+                    <p class="temp"><span id="day2">34</span>°C</p>
+                    <p><span id="day2image" class="icon-small"></span> <span id="day2d"> Sunny</span></p>
+                </div>
+                <div class="forecast-item">
+                    <h3><span id="t4">Tuesday</span>, June <span id="ssss">day</span></h3>
+                    <p class="temp"><span id="day3">34</span>°C</p>
+                    <p><span id="day3image" class="icon-small"></span> <span id="day3d"> Sunny</span></p>
+                </div>
+                <div class="forecast-item">
+                    <h3><span id="t5">Tuesday</span>, June <span id="s5">day</span></h3>
+                    <p class="temp"><span id="day4">34</span>°C</p>
+                    <p><span id="day4image" class="icon-small"></span> <span id="day4d"> Sunny</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="j.js"></script>
+</body>
+</html>
